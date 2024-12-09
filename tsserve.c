@@ -2958,7 +2958,7 @@ static void set_child_exit_handler();
 /*
  * Signal handler - catch children and stop them becoming zombies
  */
-static void on_child_exit()
+static void on_child_exit(int signum)
 {
 #if 0
   print_msg("sighandler: starting\n");
